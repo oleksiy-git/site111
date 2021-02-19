@@ -41,5 +41,5 @@ function showHelpPage() {
   document.getElementById("blank-page").appendChild(helpPageContainer);
   document.getElementById("help-page-container").appendChild(helpPageContent);
   helpPageContent.innerHTML =
-    '<p class="pop-logo">Help Page</p><p>Copyright 1986-2021. Oleksiy Onyshchenko.<br>Inspired by MS-DOS childhood.</p><hr><p>Some text will be added here..</p><br><br><a href="#"><span id="close-help-page-btn" onclick="closeHelpPage()">[ Close this window ]</span></a>';
+    '<p class="pop-logo">Help Page</p><p>Copyright 1986-2021. Oleksiy Onyshchenko.<br>Inspired by MS-DOS childhood.</p><hr><p>Some text will be added here..</p><br><br><span id="close-help-page-btn" onclick="closeHelpPage()">[ Close this window ]</span>';
 }
