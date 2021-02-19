@@ -24,9 +24,11 @@ li {
   justify-content: space-between;
   padding: 5px;
 }
-title {
-  font-size: 30px;
-  background-color: red;
+hr {
+  height: 1px;
+  border-width: 0;
+  background-color: #000000;
+  border: none;
 }
 .main-container {
   width: 80%;
@@ -175,6 +177,7 @@ title {
   box-shadow: 20px 20px rgba(0, 0, 0, 0.8);
   width: 60%;
   min-width: 640px;
+  min-height: 300px;
   height: 60%;
   margin: auto;
   background-color: #c0c0c0;
