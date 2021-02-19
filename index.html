@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="top-block"></div>
+      <div class="main-block">
+        <div class="left-panel" id="left-panel">
+          <div class="left-top">
+            <div class="top-path-label top-label-left">
+              oleksiy-git.github.io\site
+            </div>
+          </div>
+          <div class="left-middle">
+            <div class="file-name right-border-line">
+              <ul>
+                <li class="top-yellow-label">Name</li>
+                <li class="active"><span>About</span>txt</li>
+                <li><span>Blog</span>txt</li>
+                <li><span>Contact</span>exe</li>
+                <li><span>Profile photo</span>bmp</li>
+                <li><span>Resume</span>pdf</li>
+                <li><span>Work Experience</span>txt</li>
+              </ul>
+            </div>
+            <div class="file-size right-border-line">
+              <ul>
+                <li class="top-yellow-label">Size</li>
+                <li class="active"><span>35.39</span>K</li>
+                <li><span>89.16</span>K</li>
+                <li><span>1.2</span>M</li>
+                <li><span>1.4</span>M</li>
+                <li><span>2.6</span>M</li>
+                <li><span>134.32</span>K</li>
+              </ul>
+            </div>
+            <div class="file-date">
+              <ul>
+                <li class="top-yellow-label">Date</li>
+                <li class="active">28:06:2019</li>
+                <li>29:07:2017</li>
+                <li>14:04:2019</li>
+                <li>20:12:2017</li>
+                <li>12:11:2019</li>
+                <li>23:04:2020</li>
+              </ul>
+            </div>
+          </div>
+          <div class="left-bottom top-border-line">
+            <div class="left-bottom-content">
+              Copyright 1986-2021. v.1.0. Oleksiy Onyshchenko
+            </div>
+          </div>
+        </div>
+        <div class="right-panel" id="right-panel">
+          <div class="right-top">
+            <div class="top-path-label top-label-right">Quick View</div>
+          </div>
+          <div class="right-middle">
+            <div class="right-content">
+              <p>Hi There,</p>
+              <p>I'm Oleksiy!</p>
+              <p>professional Quality Assurance Engineer</p>
+              &#9617;
+            </div>
+          </div>
+          <div class="right-bottom top-border-line">
+            <div class="right-bottom-content">About.txt</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-block">
+        <a
+          href="#"
+          title="Just some random MS-DOS commands here - click to see more"
+          ><div class="footer-console" onclick="showRundomDosHelp()">
+            <span>C:\>help</span><span id="consoleDosHelper"></span></div
+        ></a>
+        <div class="footer-menu">
+          <a href="#"
+            ><span class="bottom-menu-btn" onclick="showHelpPage()"
+              >1.Help</span
+            ></a
+          >
+          <span class="bottom-menu-btn">2.UserMn</span>
+          <span class="bottom-menu-btn">3.View</span>
+          <span class="bottom-menu-btn">4.Edit</span>
+          <span class="bottom-menu-btn">5.Copy</span>
+          <a href="#"
+            ><span class="bottom-menu-btn" onclick="swapPanel()"
+              >6.SwapPanel</span
+            ></a
+          >
+          <span class="bottom-menu-btn">7.MkFold</span>
+          <span class="bottom-menu-btn">8.ChngColors</span>
+          <span class="bottom-menu-btn">9.ConfMn</span>
+          <span class="bottom-menu-btn" onclick="closeBrowserTab()"
+            >10.Quit</span
+          >
+        </div>
+        <div class="footer-outer"></div>
+      </div>
+    </div>
+    <script src="app/console.js"></script>
+    <script src="app/bottom-menu.js"></script>
+  </body>
+</html>
