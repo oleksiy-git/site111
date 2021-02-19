@@ -183,9 +183,9 @@ hr {
   width: 60%;
   min-width: 640px;
   min-height: 300px;
-  height: 60%;
+  height: 70%;
   margin: auto;
-  background-color: #c0c0c0;
+  background-color: #008080;
   display: flex;
 }
 #help-page-content {
@@ -196,14 +196,23 @@ hr {
   margin: 15px;
   text-align: center;
   color: #000000;
-  /* display: flex; */
+}
+.help-page-copyright {
+  color: #c0c0c0;
 }
 .grey-label {
   background-color: #c0c0c0;
 }
-.close-popup-btn:hover {
+.green-label {
   background-color: #008080;
+}
+.close-popup-btn {
+  color: #000000;
   cursor: pointer;
+}
+.close-popup-btn:hover {
+  background-color: #ffff00;
+  color: #800000;
 }
 
 #quit-page-container {
@@ -225,7 +234,6 @@ hr {
   margin: 15px;
   text-align: center;
   color: #000000;
-  /* display: flex; */
 }
 
 /* Media Queries */
