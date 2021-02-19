@@ -209,10 +209,12 @@ hr {
 .close-popup-btn {
   color: #000000;
   cursor: pointer;
+  padding: 5px;
 }
 .close-popup-btn:hover {
   background-color: #ffff00;
   color: #800000;
+  padding: 5px;
 }
 
 #quit-page-container {

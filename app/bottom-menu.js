@@ -56,5 +56,5 @@ function quitConfirmation() {
   document.getElementById("blank-page").appendChild(quitPageContainer);
   document.getElementById("quit-page-container").appendChild(quitPageContent);
   quitPageContent.innerHTML =
-    '<div class="top-path-label grey-label">Exit</div><div><p>Are you sure that you want to quit?</p></div><br><span class="close-popup-btn">[ Yes ]</span><span> </span><span class="close-popup-btn" onclick="closeHelpPage()">[ No ]</span></div>';
+    '<div class="top-path-label grey-label">Exit</div><div><p>Are you sure that you want to quit?</p></div><br><span class="close-popup-btn">[ Yes ]</span><span>     </span><span class="close-popup-btn" onclick="closeHelpPage()">[ No ]</span></div>';
 }
