@@ -201,7 +201,7 @@ hr {
 .grey-label {
   background-color: #c0c0c0;
 }
-#close-help-page-btn:hover {
+.close-help-page-btn:hover {
   background-color: #008080;
   cursor: pointer;
 }
@@ -230,11 +230,13 @@ hr {
 .red-label {
   background-color: #800000;
 }
-
-#close-quit-page-btn:hover {
+.close-quit-page-btn {
+  color: #ffff00;
+}
+.close-quit-page-btn:hover {
   background-color: #000000;
   cursor: pointer;
-  /* color: #c0c0c0; */
+  color: #ffff00;
 }
 
 /* Media Queries */
