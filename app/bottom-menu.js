@@ -1,3 +1,5 @@
+// bottom menu functions
+
 // this function swaps left and right panels
 function swapPanel() {
   let leftPanel = document.getElementById("left-panel");
