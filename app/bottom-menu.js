@@ -33,7 +33,7 @@ function closeHelpPage() {
   document.body.removeChild(blankElement);
 }
 
-// this function creates Web element to show a Help page for the user
+// this function creates Web element to show a "Help" page for the user
 function showHelpPage() {
   createBlankPage();
   let helpPageContainer = document.createElement("div");
@@ -43,5 +43,18 @@ function showHelpPage() {
   document.getElementById("blank-page").appendChild(helpPageContainer);
   document.getElementById("help-page-container").appendChild(helpPageContent);
   helpPageContent.innerHTML =
-    '<p class="pop-logo">Help Page</p><p>Copyright 1986-2021. Oleksiy Onyshchenko.<br>Inspired by MS-DOS childhood.</p><hr><p>Some text will be added here..</p><br><br><span id="close-help-page-btn" onclick="closeHelpPage()">[ Close this window ]</span>';
+    '<div class="top-path-label grey-label">Help Page</div><div>Copyright 1986-2021. Oleksiy Onyshchenko.<br>Inspired by MS-DOS childhood.</div><br><hr><div>Some text will be added here..</div><br><br><br><br><br><br><div><span id="close-help-page-btn" onclick="closeHelpPage()">[ Close this window ]</span></div>';
+}
+
+// this function creares Web element to show an "Exit" confirmation popup message
+function quitConfirmation() {
+  createBlankPage();
+  let quitPageContainer = document.createElement("div");
+  let quitPageContent = document.createElement("div");
+  quitPageContainer.id = "quit-page-container";
+  quitPageContent.id = "quit-page-content";
+  document.getElementById("blank-page").appendChild(quitPageContainer);
+  document.getElementById("quit-page-container").appendChild(quitPageContent);
+  quitPageContent.innerHTML =
+    '<div class="top-path-label red-label">Exit</div><div><p>Are you sure that you want to exit?</p></div><br><span>[ Yes ] </span><span id="close-quit-page-btn" onclick="closeHelpPage()"> [ No ]</span></div>';
 }

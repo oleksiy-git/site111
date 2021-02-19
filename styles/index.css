@@ -176,6 +176,8 @@ hr {
 }
 
 /* Popup windows */
+
+/* Help page poup */
 #help-page-container {
   box-shadow: 20px 20px rgba(0, 0, 0, 0.8);
   width: 60%;
@@ -196,18 +198,43 @@ hr {
   color: #000000;
   /* display: flex; */
 }
-.pop-logo {
+.grey-label {
   background-color: #c0c0c0;
-  margin-left: auto;
-  margin-right: auto;
-  width: max-content;
-  padding: 5px 12px;
-  top: -38px;
-  position: relative;
 }
 #close-help-page-btn:hover {
   background-color: #008080;
   cursor: pointer;
+}
+
+#quit-page-container {
+  box-shadow: 20px 20px rgba(0, 0, 0, 0.8);
+  width: 30%;
+  min-width: 300px;
+  min-height: 180px;
+  height: 30%;
+  margin: auto;
+  background-color: #800000;
+  display: flex;
+}
+
+#quit-page-content {
+  width: 100%;
+  border: #c0c0c0;
+  border-width: 5px;
+  border-style: double;
+  margin: 15px;
+  text-align: center;
+  color: #c0c0c0;
+  /* display: flex; */
+}
+.red-label {
+  background-color: #800000;
+}
+
+#close-quit-page-btn:hover {
+  background-color: #000000;
+  cursor: pointer;
+  /* color: #c0c0c0; */
 }
 
 /* Media Queries */
