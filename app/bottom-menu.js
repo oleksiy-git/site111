@@ -43,7 +43,7 @@ function showHelpPage() {
   document.getElementById("blank-page").appendChild(helpPageContainer);
   document.getElementById("help-page-container").appendChild(helpPageContent);
   helpPageContent.innerHTML =
-    '<div class="top-path-label grey-label">Help Page</div><div>Copyright 1986-2021. Oleksiy Onyshchenko.<br>Inspired by MS-DOS childhood.</div><br><hr><div>Some text will be added here..</div><br><br><br><br><br><br><div><span class="close-help-page-btn" onclick="closeHelpPage()">[ Close this window ]</span></div>';
+    '<div class="top-path-label grey-label">Help Page</div><div>Copyright 1986-2021. Oleksiy Onyshchenko.<br>Inspired by MS-DOS childhood.</div><br><hr><div>Some text will be added here..</div><br><br><br><br><br><br><div><span class="close-popup-btn" onclick="closeHelpPage()">[ Close this window ]</span></div>';
 }
 
 // this function creares Web element to show an "Exit" confirmation popup message
@@ -56,5 +56,5 @@ function quitConfirmation() {
   document.getElementById("blank-page").appendChild(quitPageContainer);
   document.getElementById("quit-page-container").appendChild(quitPageContent);
   quitPageContent.innerHTML =
-    '<div class="top-path-label dark-grey-label">Exit</div><div><p>Are you sure that you want to quit?</p></div><br><span class="close-quit-page-btn">[ Yes ]</span><span> </span><span class="close-quit-page-btn" onclick="closeHelpPage()">[ No ]</span></div>';
+    '<div class="top-path-label grey-label">Exit</div><div><p>Are you sure that you want to quit?</p></div><br><span class="close-popup-btn">[ Yes ]</span><span> </span><span class="close-popup-btn" onclick="closeHelpPage()">[ No ]</span></div>';
 }

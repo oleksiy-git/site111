@@ -201,7 +201,7 @@ hr {
 .grey-label {
   background-color: #c0c0c0;
 }
-.close-help-page-btn:hover {
+.close-popup-btn:hover {
   background-color: #008080;
   cursor: pointer;
 }
@@ -213,30 +213,19 @@ hr {
   min-height: 180px;
   height: 30%;
   margin: auto;
-  background-color: #606060;
+  background-color: #c0c0c0;
   display: flex;
 }
 
 #quit-page-content {
   width: 100%;
-  border: #ffffff;
+  border: #000000;
   border-width: 5px;
   border-style: double;
   margin: 15px;
   text-align: center;
-  color: #ffffff;
+  color: #000000;
   /* display: flex; */
-}
-.dark-grey-label {
-  background-color: #606060;
-}
-.close-quit-page-btn {
-  color: #ffff00;
-}
-.close-quit-page-btn:hover {
-  background-color: #000000;
-  cursor: pointer;
-  color: #ffff00;
 }
 
 /* Media Queries */
