@@ -102,6 +102,7 @@ hr {
 .active {
   background-color: #008080;
   color: #000000;
+  /* box-shadow: 2px 0px #000000; */
 }
 .left-bottom,
 .right-bottom {
