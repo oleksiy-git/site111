@@ -213,22 +213,22 @@ hr {
   min-height: 180px;
   height: 30%;
   margin: auto;
-  background-color: #800000;
+  background-color: #606060;
   display: flex;
 }
 
 #quit-page-content {
   width: 100%;
-  border: #c0c0c0;
+  border: #ffffff;
   border-width: 5px;
   border-style: double;
   margin: 15px;
   text-align: center;
-  color: #c0c0c0;
+  color: #ffffff;
   /* display: flex; */
 }
-.red-label {
-  background-color: #800000;
+.dark-grey-label {
+  background-color: #606060;
 }
 .close-quit-page-btn {
   color: #ffff00;
