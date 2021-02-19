@@ -23,6 +23,7 @@ li {
   display: flex;
   justify-content: space-between;
   padding: 5px;
+  cursor: pointer;
 }
 hr {
   height: 1px;
