@@ -5,7 +5,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto Mono", monospace;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   color: #00ffff;
 }
 a {
@@ -200,7 +200,7 @@ hr {
   margin-right: auto;
   width: max-content;
   padding: 5px 12px;
-  top: -40px;
+  top: -38px;
   position: relative;
 }
 #close-help-page-btn:hover {
@@ -210,6 +210,6 @@ hr {
 /* Media Queries */
 @media screen and (max-width: 900px) {
   body {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
