@@ -159,6 +159,7 @@ hr {
   padding: 5px;
   display: flex;
   flex: 1;
+  cursor: pointer;
 }
 .bottom-menu-btn:hover {
   background-color: #c0c0c0;
