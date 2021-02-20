@@ -206,6 +206,9 @@ hr {
 .green-label {
   background-color: #008080;
 }
+.red-label {
+  background-color: #800000;
+}
 .close-popup-btn {
   color: #000000;
   cursor: pointer;
@@ -236,6 +239,35 @@ hr {
   margin: 15px;
   text-align: center;
   color: #000000;
+}
+
+#delete-page-container {
+  box-shadow: 20px 20px rgba(0, 0, 0, 0.8);
+  width: 35%;
+  min-width: 300px;
+  min-height: 180px;
+  height: 35%;
+  margin: auto;
+  background-color: #800000;
+  display: flex;
+}
+
+#delete-page-content {
+  width: 100%;
+  border: #ffffff;
+  border-width: 5px;
+  border-style: double;
+  margin: 15px;
+  text-align: center;
+  color: #ffffff;
+}
+.directed-by-meme-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+.directed-by-meme-img {
+  width: 100%;
 }
 
 /* Media Queries */

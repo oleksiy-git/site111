@@ -58,3 +58,24 @@ function quitConfirmation() {
   quitPageContent.innerHTML =
     '<div class="top-path-label grey-label">Exit</div><div><p>Are you sure that you want to quit?</p></div><br><span class="close-popup-btn">[ Yes ]</span><span>     </span><span class="close-popup-btn" onclick="closeHelpPage()">[ No ]</span></div>';
 }
+
+// this page creates Web element to show "Delete" confirmation popup
+function deletePage() {
+  createBlankPage();
+  let deletePageContainer = document.createElement("div");
+  let deletePageContent = document.createElement("div");
+  deletePageContainer.id = "delete-page-container";
+  deletePageContent.id = "delete-page-content";
+  document.getElementById("blank-page").appendChild(deletePageContainer);
+  document
+    .getElementById("delete-page-container")
+    .appendChild(deletePageContent);
+  deletePageContent.innerHTML =
+    '<div class="top-path-label red-label">Delete</div><div><p>One does not simply delete a single file.<br>Delete a whole Web Site?</p></div><br><span class="close-popup-btn" onclick="deleteBodyChild()">[ Yes ]</span><span>     </span><span class="close-popup-btn" onclick="closeHelpPage()">[ No ]</span></div>';
+}
+
+// this function shows "Directed By Meme" once a user clicked "Delete > Yes"
+function deleteBodyChild() {
+  document.body.innerHTML =
+    '<div class="directed-by-meme-container"><image class="directed-by-meme-img" src="images/DirectedByMeme.gif"></image></div>';
+}
