@@ -56,7 +56,7 @@ function quitConfirmation() {
   document.getElementById("blank-page").appendChild(quitPageContainer);
   document.getElementById("quit-page-container").appendChild(quitPageContent);
   quitPageContent.innerHTML =
-    '<div class="top-path-label grey-label">Exit</div><div><p>Are you sure that you want to quit?</p></div><br><span class="close-popup-btn">[ Yes ]</span><span>     </span><span class="close-popup-btn" onclick="closeHelpPage()">[ No ]</span></div>';
+    '<div class="top-path-label grey-label">Exit</div><div><p>Are you sure that you want to quit?</p></div><span class="close-popup-btn">[ Yes ]</span><span>     </span><span class="close-popup-btn" onclick="closeHelpPage()">[ No ]</span></div>';
 }
 
 // this page creates Web element to show "Delete" confirmation popup
@@ -78,4 +78,17 @@ function deletePage() {
 function deleteBodyChild() {
   document.body.innerHTML =
     '<div class="directed-by-meme-container"><div><image class="directed-by-meme-img" src="images/DirectedByMeme.gif"></image></div><div><a class="rebuild-site-btn" href="https://oleksiy-git.github.io/site">[ Cick here to rebuild the site ]</a></div></div>';
+}
+
+// this funcion created Web element to show "Info" popup that Feature is not yet implemented
+function infoMessage() {
+  createBlankPage();
+  let infoPageContainer = document.createElement("div");
+  let infoPageContent = document.createElement("div");
+  infoPageContainer.id = "quit-page-container";
+  infoPageContent.id = "quit-page-content";
+  document.getElementById("blank-page").appendChild(infoPageContainer);
+  document.getElementById("quit-page-container").appendChild(infoPageContent);
+  infoPageContent.innerHTML =
+    '<div class="top-path-label grey-label">Info</div><div>This feature is not implemented yet..</div><br><br><div><span class="close-popup-btn" onclick="closeHelpPage()">[ Close this window ]</span></div>';
 }
