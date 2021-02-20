@@ -71,11 +71,11 @@ function deletePage() {
     .getElementById("delete-page-container")
     .appendChild(deletePageContent);
   deletePageContent.innerHTML =
-    '<div class="top-path-label red-label">Delete</div><div><p>One does not simply delete a single file.<br>Delete a whole Web Site?</p></div><br><span class="close-popup-btn" onclick="deleteBodyChild()">[ Yes ]</span><span>     </span><span class="close-popup-btn" onclick="closeHelpPage()">[ No ]</span></div>';
+    '<div class="top-path-label red-label">Delete</div><div><p>One does not simply delete a single file.<br><br>Delete a whole Web Site?</p></div><div><span class="delete-yes-no-button" onclick="deleteBodyChild()">[ Yes ]</span><span>     </span><span class="delete-yes-no-button" onclick="closeHelpPage()">[ No ]</span></div>';
 }
 
-// this function shows "Directed By Meme" once a user clicked "Delete > Yes"
+// this function shows "Directed By Meme" when user clicks "Delete > Yes"
 function deleteBodyChild() {
   document.body.innerHTML =
-    '<div class="directed-by-meme-container"><image class="directed-by-meme-img" src="images/DirectedByMeme.gif"></image></div>';
+    '<div class="directed-by-meme-container"><div><image class="directed-by-meme-img" src="images/DirectedByMeme.gif"></image></div><div><a class="rebuild-site-btn" href="https://oleksiy-git.github.io/site">[ Cick here to rebuild the site ]</a></div></div>';
 }

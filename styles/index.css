@@ -209,6 +209,19 @@ hr {
 .red-label {
   background-color: #800000;
 }
+.red-button {
+  color: #800000;
+}
+.delete-yes-no-button {
+  color: #ffff00;
+  cursor: pointer;
+  padding: 5px;
+}
+.delete-yes-no-button:hover {
+  background-color: #000000;
+  color: #ffff00;
+  padding: 5px;
+}
 .close-popup-btn {
   color: #000000;
   cursor: pointer;
@@ -245,7 +258,7 @@ hr {
   box-shadow: 20px 20px rgba(0, 0, 0, 0.8);
   width: 35%;
   min-width: 300px;
-  min-height: 180px;
+  min-height: 250px;
   height: 35%;
   margin: auto;
   background-color: #800000;
@@ -262,13 +275,20 @@ hr {
   color: #ffffff;
 }
 .directed-by-meme-container {
-  display: flex;
+  /* display: flex; */
   height: 100vh;
   width: 100%;
 }
 .directed-by-meme-img {
   width: 100%;
+  height: 90vh;
+  margin: auto;
 }
+/* .rebuild-site-btn {
+  color: #c0c0c0;
+  font-size: 0.7rem;
+  align-items: center;
+} */
 
 /* Media Queries */
 @media screen and (max-width: 900px) {
