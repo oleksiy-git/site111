@@ -331,7 +331,7 @@ img {
   cursor: pointer;
 }
 .new-line:hover {
-  background-color: #00ffff;
+  background-color: #c0c0c0;
   color: #000000;
 }
 .active-line {
