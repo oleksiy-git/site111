@@ -31,39 +31,65 @@
               </div></a
             >
           </div>
-          <div class="left-middle">
-            <div class="file-name right-border-line">
-              <ul>
-                <li class="top-yellow-label">Name</li>
-                <li class="active"><span>About</span>txt</li>
-                <li><span>Blog</span>txt</li>
-                <li><span>Contact</span>exe</li>
-                <li><span>Profile photo</span>bmp</li>
-                <li><span>Resume</span>pdf</li>
-                <li><span>Work Experience</span>txt</li>
-              </ul>
-            </div>
-            <div class="file-size right-border-line">
-              <ul>
-                <li class="top-yellow-label">Size</li>
-                <li class="active"><span>35.39</span>K</li>
-                <li><span>89.16</span>K</li>
-                <li><span>1.2</span>M</li>
-                <li><span>1.4</span>M</li>
-                <li><span>2.6</span>M</li>
-                <li><span>134.32</span>K</li>
-              </ul>
-            </div>
-            <div class="file-date">
-              <ul>
-                <li class="top-yellow-label">Date</li>
-                <li class="active">28:06:2019</li>
-                <li>29:07:2017</li>
-                <li>14:04:2019</li>
-                <li>20:12:2017</li>
-                <li>12:11:2019</li>
-                <li>23:04:2020</li>
-              </ul>
+          <div class="left-middle-container">
+            <div class="file-name right-border-line"></div>
+            <!--draw vertical line-->
+            <div class="file-size right-border-line"></div>
+            <!--draw vertical line-->
+            <div class="file-date"></div>
+            <!--draw vertical line-->
+            <div id="lol" class="left-middle-content">
+              <div class="left-top-labels-container">
+                <div class="left-top-labels">
+                  <span class="name-label">Name</span>
+                  <span class="size-label">Size</span>
+                  <span class="date-label">Date</span>
+                </div>
+              </div>
+              <div class="new-line" onclick="root()">
+                <div class="name-column">
+                  <span>..</span>
+                </div>
+                <div class="size-column center"><span>< Up ></span></div>
+                <div class="date-column">24:02:2020</div>
+              </div>
+              <div id="about" class="new-line" onclick="aboutInfo()">
+                <div class="name-column">
+                  <span>About</span><span>txt</span>
+                </div>
+                <div class="size-column"><span>39.20 K</span></div>
+                <div class="date-column">18:02:2020</div>
+              </div>
+              <div id="blog" class="new-line" onclick="blogInfo()">
+                <div class="name-column"><span>Blog</span><span>txt</span></div>
+                <div class="size-column"><span>16.29 K</span></div>
+                <div class="date-column">18:02:2020</div>
+              </div>
+              <div class="new-line">
+                <div class="name-column">
+                  <span>Contact</span><span>exe</span>
+                </div>
+                <div class="size-column"><span>6.31 M</span></div>
+                <div class="date-column">18:02:2020</div>
+              </div>
+              <div class="new-line">
+                <div class="name-column">
+                  <span>Resume</span><span>pdf</span>
+                </div>
+                <div class="size-column"><span>896.12 K</span></div>
+                <div class="date-column">18:02:2020</div>
+              </div>
+              <div
+                id="work-experience"
+                class="new-line"
+                onclick="workExperienceInfo()"
+              >
+                <div class="name-column">
+                  <span>Work Experience</span><span>txt</span>
+                </div>
+                <div class="size-column"><span>35.39 K</span></div>
+                <div class="date-column">24:02:2020</div>
+              </div>
             </div>
           </div>
           <div class="left-bottom top-border-line">
@@ -77,18 +103,8 @@
           <div class="right-top">
             <div class="top-path-label top-label-right">Quick View</div>
           </div>
-          <div class="right-middle">
-            <div class="right-content">
-              <p>Hi There,</p>
-              <p>I'm Oleksiy!</p>
-              <p>Quality Assurance Analyst</p>
-              <p>
-                &#9617; Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatum officiis enim suscipit quasi tenetur consequatur,
-                harum facilis voluptatibus vitae dolor voluptas non fugit autem
-                accusantium, earum dolorem doloribus beatae quisquam.
-              </p>
-            </div>
+          <div class="right-middle-container">
+            <div class="right-content" id="right-content"></div>
           </div>
           <div class="right-bottom top-border-line">
             <div class="right-bottom-content">About.txt</div>

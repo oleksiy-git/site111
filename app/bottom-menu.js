@@ -56,7 +56,7 @@ function quitConfirmation() {
   document.getElementById("blank-page").appendChild(quitPageContainer);
   document.getElementById("quit-page-container").appendChild(quitPageContent);
   quitPageContent.innerHTML =
-    '<div class="top-path-label grey-label">Exit</div><div><p>Are you sure that you want to quit?</p></div><span class="close-popup-btn">[ Yes ]</span><span>     </span><span class="close-popup-btn" onclick="closeHelpPage()">[ No ]</span></div>';
+    '<div class="top-path-label grey-label">Exit</div><div><p>Are you sure that you want to quit?</p></div><br><span class="close-popup-btn">{ Yes }</span><span>     </span><span class="close-popup-btn" onclick="closeHelpPage()">[ No ]</span><br><br></div>';
 }
 
 // this page creates Web element to show "Delete" confirmation popup
@@ -64,14 +64,14 @@ function deletePage() {
   createBlankPage();
   let deletePageContainer = document.createElement("div");
   let deletePageContent = document.createElement("div");
-  deletePageContainer.id = "delete-page-container";
-  deletePageContent.id = "delete-page-content";
+  deletePageContainer.id = "alert-page-container";
+  deletePageContent.id = "alert-page-content";
   document.getElementById("blank-page").appendChild(deletePageContainer);
   document
-    .getElementById("delete-page-container")
+    .getElementById("alert-page-container")
     .appendChild(deletePageContent);
   deletePageContent.innerHTML =
-    '<div class="top-path-label red-label">Delete</div><div><p>One does not simply delete a single file.<br><br>Delete a whole Web Site?</p></div><div><span class="delete-yes-no-button" onclick="deleteBodyChild()">[ Yes ]</span><span>     </span><span class="delete-yes-no-button" onclick="closeHelpPage()">[ No ]</span></div>';
+    '<div class="top-path-label red-label">Delete</div><div><p>One does not simply delete a single file.<br><br>Delete a whole Web Site?</p></div><br><div><span class="delete-yes-no-button" onclick="deleteBodyChild()">{ Yes }</span><span>     </span><span class="delete-yes-no-button" onclick="closeHelpPage()">[ Cancel ]</span><br><br></div>';
 }
 
 // this function shows "Directed By Meme" when user clicks "Delete > Yes"
@@ -90,5 +90,5 @@ function infoMessage() {
   document.getElementById("blank-page").appendChild(infoPageContainer);
   document.getElementById("quit-page-container").appendChild(infoPageContent);
   infoPageContent.innerHTML =
-    '<div class="top-path-label grey-label">Info</div><div>This feature is not implemented yet..</div><br><br><div><span class="close-popup-btn" onclick="closeHelpPage()">[ Close this window ]</span></div>';
+    '<div class="top-path-label grey-label">Info</div><div><p>This feature is not implemented yet..</p></div><br><span class="close-popup-btn" onclick="closeHelpPage()">[ Close this window ]</span><br><br></div>';
 }
