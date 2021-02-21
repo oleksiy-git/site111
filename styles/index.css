@@ -225,8 +225,6 @@ img {
 
 #quit-page-container {
   box-shadow: 20px 20px rgba(0, 0, 0, 0.8);
-  width: 30%;
-  min-width: 300px;
   min-width: max-content;
   height: max-content;
   margin: auto;
@@ -247,8 +245,6 @@ img {
 
 #alert-page-container {
   box-shadow: 20px 20px rgba(0, 0, 0, 0.8);
-  width: 35%;
-  min-width: 300px;
   min-width: max-content;
   height: max-content;
   margin: auto;
@@ -265,7 +261,6 @@ img {
   margin: 15px;
   text-align: center;
   color: #ffffff;
-  /* padding: 10px; */
 }
 .directed-by-meme-container {
   /* display: flex; */
