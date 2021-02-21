@@ -81,7 +81,7 @@ function contactExe() {
   document.getElementById("blank-page").appendChild(infoPageContainer);
   document.getElementById("quit-page-container").appendChild(infoPageContent);
   infoPageContent.innerHTML =
-    '<div class="top-path-label grey-label">Contact.exe</div><div class="popup-content"><p>This programme is under development.</p><p>Meanwhile, you can contact me via <a href="http://www.linkedin.com/in/oleksiy-onyshchenko">www.linkedin.com/in/oleksiy-onyshchenko</a></div><br><div><span class="close-popup-btn" onclick="closeHelpPage()">[ Close this window ]</span><br><br></div>';
+    '<div class="top-path-label grey-label">Contact.exe</div><div class="popup-content"><p>This programme is under development.</p><p>Meanwhile, you can contact me via</p><p><a href="http://www.linkedin.com/in/oleksiy-onyshchenko">www.linkedin.com/in/oleksiy-onyshchenko</a></p></div><br><div><span class="close-popup-btn" onclick="closeHelpPage()">[ Close this window ]</span><br><br></div>';
 }
 
 // running fucntions
