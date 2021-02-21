@@ -276,12 +276,8 @@ img {
   width: 100%;
   height: 90vh;
   margin: auto;
+  display: flex;
 }
-/* .rebuild-site-btn {
-  color: #c0c0c0;
-  font-size: 0.7rem;
-  align-items: center;
-} */
 
 /* Media Queries */
 @media screen and (max-width: 900px) {
