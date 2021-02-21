@@ -33,6 +33,15 @@ function blogInfo() {
   rightContent.innerHTML = '<p>Some "Blog" text to be added here..</p>';
 }
 
+// this function shows "Profile Photo" on the right panel
+function profilePhotoBmp() {
+  removeActiveLineStyle();
+  let activeLine = document.getElementById("profile-photo");
+  activeLine.classList.add("active-line");
+  let rightContent = document.getElementById("right-content");
+  rightContent.innerHTML = '<img src="images/profile-photo.png"></img>';
+}
+
 // this function shows "Work Experience" information on the right panel
 function workExperienceInfo() {
   removeActiveLineStyle();
