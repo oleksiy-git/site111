@@ -361,3 +361,7 @@ hr {
 .center {
   justify-content: center;
 }
+.popup-content {
+  padding-left: 20px;
+  padding-right: 20px;
+}

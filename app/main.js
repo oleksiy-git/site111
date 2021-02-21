@@ -53,7 +53,7 @@ function root() {
   document.getElementById("blank-page").appendChild(errorPageContainer);
   document.getElementById("alert-page-container").appendChild(errorPageContent);
   errorPageContent.innerHTML =
-    '<div class="top-path-label red-label">Error</div><div><p>You don&#39;t have an access to the "Root" folder</p></div><div><br><span class="delete-yes-no-button" onclick="closeHelpPage()">[ Close this window ]</span><br><br></div>';
+    '<div class="top-path-label red-label">Access Denied</div><div class="popup-content"><p>You don&#39;t have an access to the "Root" folder</p></div><div><br><span class="delete-yes-no-button" onclick="closeHelpPage()">[ Close this window ]</span><br><br></div>';
 }
 
 // running fucntions
