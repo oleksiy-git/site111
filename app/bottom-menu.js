@@ -43,7 +43,7 @@ function showHelpPage() {
   document.getElementById("blank-page").appendChild(helpPageContainer);
   document.getElementById("help-page-container").appendChild(helpPageContent);
   helpPageContent.innerHTML =
-    '<div class="top-path-label green-label">Help Page</div><div class="help-page-copyright">Copyright 1986-2021. Oleksiy Onyshchenko.<br>Inspired by MS-DOS childhood.</div><br><hr><div class="popup-content">Some "Help" text to  be added here..</div><br><br><br><br><br><br><div><span class="close-popup-btn" onclick="closeHelpPage()">[ Close this window ]</span></div>';
+    '<div class="top-path-label green-label">Help Page</div><div class="help-page-copyright">Copyright 1986-2021. Oleksiy Onyshchenko.<br>Inspired by MS-DOS childhood.</div><br><hr><div class="popup-content">Some "Help" text to  be added here..</div><br><br><br><br><br><br><br><div><span class="close-popup-btn" onclick="closeHelpPage()">[ Close this window ]</span></div>';
 }
 
 // this function creares Web element to show an "Exit" confirmation popup message
