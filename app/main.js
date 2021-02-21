@@ -65,6 +65,25 @@ function root() {
     '<div class="top-path-label red-label">Access Denied</div><div class="popup-content"><p>You don&#39;t have an access to the "Root" folder</p></div><div><br><span class="delete-yes-no-button" onclick="closeHelpPage()">[ Close this window ]</span><br><br></div>';
 }
 
+// this function creates Web element to show an "Info" message when user tries to run a contact.exe programme
+function contactExe() {
+  createBlankPage();
+  removeActiveLineStyle();
+  let activeLine = document.getElementById("contact-exe");
+  activeLine.classList.add("active-line");
+  let rightContent = document.getElementById("right-content");
+  rightContent.innerHTML =
+    "<p>Preview is not available for executable programme.</p>";
+  let infoPageContainer = document.createElement("div");
+  let infoPageContent = document.createElement("div");
+  infoPageContainer.id = "quit-page-container";
+  infoPageContent.id = "quit-page-content";
+  document.getElementById("blank-page").appendChild(infoPageContainer);
+  document.getElementById("quit-page-container").appendChild(infoPageContent);
+  infoPageContent.innerHTML =
+    '<div class="top-path-label grey-label">Contact.exe</div><div class="popup-content"><p>This programme is under development.</p><p>Meanwhile, you can contact me via <a href="www.linkedin.com/in/oleksiy-onyshchenko">www.linkedin.com/in/oleksiy-onyshchenko</a></div><br><div><span class="close-popup-btn" onclick="closeHelpPage()">[ Close this window ]</span><br><br></div>';
+}
+
 // running fucntions
 getCurrentYear();
 aboutInfo(); // to show "About" page by default
