@@ -332,11 +332,14 @@ img {
   cursor: pointer;
 }
 .new-line:hover {
-  background-color: #c0c0c0;
+  background-color: rgba(0, 128, 128, 0.9);
   color: #000000;
 }
+.new-line:active {
+  color: #00ffff;
+}
 .active-line {
-  background-color: #008080;
+  background-color: rgba(0, 128, 128, 0.9);
   color: #000000;
 }
 .name-column {
