@@ -136,6 +136,7 @@ img {
   color: #c0c0c0;
   margin-top: auto;
   margin-bottom: auto;
+  cursor: pointer;
 }
 .footer-menu {
   display: flex;
