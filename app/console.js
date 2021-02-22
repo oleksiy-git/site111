@@ -2,7 +2,7 @@
 
 function showRundomDosHelp() {
   consoleElement = document.getElementById("consoleDosHelper");
-  consoleHelpList = [
+  var consoleHelpList = [
     "	ASSOC          Displays or modifies file extension associations.	",
     "	ATTRIB         Displays or changes file attributes.	",
     "	BREAK          Sets or clears extended CTRL+C checking.	",

@@ -2,8 +2,8 @@
 
 // this function swaps left and right panels
 function swapPanel() {
-  let leftPanel = document.getElementById("left-panel");
-  let rightPanel = document.getElementById("right-panel");
+  var leftPanel = document.getElementById("left-panel");
+  var rightPanel = document.getElementById("right-panel");
 
   if (leftPanel.hasAttribute("style")) {
     leftPanel.removeAttribute("style");
@@ -22,22 +22,22 @@ function swapPanel() {
 
 // this function creates a blank page to diable all other Web elements from being actioned
 function createBlankPage() {
-  let blankElement = document.createElement("div");
+  var blankElement = document.createElement("div");
   document.body.appendChild(blankElement);
   blankElement.id = "blank-page";
 }
 
 // this function removes a blank page including all child elements (popup windows) to enable all other Web elements from being actioned
 function closeHelpPage() {
-  let blankElement = document.getElementById("blank-page");
+  var blankElement = document.getElementById("blank-page");
   document.body.removeChild(blankElement);
 }
 
 // this function creates Web element to show a "Help" page for the user
 function showHelpPage() {
   createBlankPage();
-  let helpPageContainer = document.createElement("div");
-  let helpPageContent = document.createElement("div");
+  var helpPageContainer = document.createElement("div");
+  var helpPageContent = document.createElement("div");
   helpPageContainer.id = "help-page-container";
   helpPageContent.id = "help-page-content";
   document.getElementById("blank-page").appendChild(helpPageContainer);
@@ -49,8 +49,8 @@ function showHelpPage() {
 // this function creares Web element to show an "Exit" confirmation popup message
 function quitConfirmation() {
   createBlankPage();
-  let quitPageContainer = document.createElement("div");
-  let quitPageContent = document.createElement("div");
+  var quitPageContainer = document.createElement("div");
+  var quitPageContent = document.createElement("div");
   quitPageContainer.id = "quit-page-container";
   quitPageContent.id = "quit-page-content";
   document.getElementById("blank-page").appendChild(quitPageContainer);
@@ -62,8 +62,8 @@ function quitConfirmation() {
 // this page creates Web element to show "Delete" confirmation popup
 function deletePage() {
   createBlankPage();
-  let deletePageContainer = document.createElement("div");
-  let deletePageContent = document.createElement("div");
+  var deletePageContainer = document.createElement("div");
+  var deletePageContent = document.createElement("div");
   deletePageContainer.id = "alert-page-container";
   deletePageContent.id = "alert-page-content";
   document.getElementById("blank-page").appendChild(deletePageContainer);
@@ -83,8 +83,8 @@ function deleteBodyChild() {
 // this funcion created Web element to show "Info" popup that Feature is not yet implemented
 function infoMessage() {
   createBlankPage();
-  let infoPageContainer = document.createElement("div");
-  let infoPageContent = document.createElement("div");
+  var infoPageContainer = document.createElement("div");
+  var infoPageContent = document.createElement("div");
   infoPageContainer.id = "quit-page-container";
   infoPageContent.id = "quit-page-content";
   document.getElementById("blank-page").appendChild(infoPageContainer);

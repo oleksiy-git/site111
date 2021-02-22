@@ -2,8 +2,8 @@
 
 // this function returns current Year for "Copyright" section to make this app more dinamic :)
 function getCurrentYear() {
-  let today = new Date();
-  let year = today.getFullYear();
+  var today = new Date();
+  var year = today.getFullYear();
   document.getElementById("current-year").innerHTML = year;
 }
 
@@ -26,9 +26,9 @@ function setSelectedFileName(fileName) {
 // this function shows "About" information on the right panel
 function aboutInfo() {
   removeActiveLineStyle();
-  let activeLine = document.getElementById("about");
+  var activeLine = document.getElementById("about");
   activeLine.classList.add("active-line");
-  let rightContent = document.getElementById("right-content");
+  var rightContent = document.getElementById("right-content");
   rightContent.innerHTML = '<p>Some "About" text to be added here..</p>';
 
   setSelectedFileName(activeLine);
@@ -37,9 +37,9 @@ function aboutInfo() {
 // this function shows "Blog" information on the right panel
 function blogInfo() {
   removeActiveLineStyle();
-  let activeLine = document.getElementById("blog");
+  var activeLine = document.getElementById("blog");
   activeLine.classList.add("active-line");
-  let rightContent = document.getElementById("right-content");
+  var rightContent = document.getElementById("right-content");
   rightContent.innerHTML = '<p>Some "Blog" text to be added here..</p>';
 
   setSelectedFileName(activeLine);
@@ -48,9 +48,9 @@ function blogInfo() {
 // this function shows "Profile Photo" on the right panel
 function profilePhotoBmp() {
   removeActiveLineStyle();
-  let activeLine = document.getElementById("profile-photo");
+  var activeLine = document.getElementById("profile-photo");
   activeLine.classList.add("active-line");
-  let rightContent = document.getElementById("right-content");
+  var rightContent = document.getElementById("right-content");
   rightContent.innerHTML = '<img src="images/profile-photo.png"></img>';
 
   setSelectedFileName(activeLine);
@@ -59,9 +59,9 @@ function profilePhotoBmp() {
 // this function shows "Work Experience" information on the right panel
 function workExperienceInfo() {
   removeActiveLineStyle();
-  let activeLine = document.getElementById("work-experience");
+  var activeLine = document.getElementById("work-experience");
   activeLine.classList.add("active-line");
-  let rightContent = document.getElementById("right-content");
+  var rightContent = document.getElementById("right-content");
   rightContent.innerHTML =
     '<p>Some "Work Experience" text to be added here..</p>';
 
@@ -71,8 +71,8 @@ function workExperienceInfo() {
 // this function creates Web element to show an "Error" message when user tries to navigate to the "Root" folder
 function root() {
   createBlankPage();
-  let errorPageContainer = document.createElement("div");
-  let errorPageContent = document.createElement("div");
+  var errorPageContainer = document.createElement("div");
+  var errorPageContent = document.createElement("div");
   errorPageContainer.id = "alert-page-container";
   errorPageContent.id = "alert-page-content";
   document.getElementById("blank-page").appendChild(errorPageContainer);
@@ -85,13 +85,13 @@ function root() {
 function contactExe() {
   createBlankPage();
   removeActiveLineStyle();
-  let activeLine = document.getElementById("contact-exe");
+  var activeLine = document.getElementById("contact-exe");
   activeLine.classList.add("active-line");
-  let rightContent = document.getElementById("right-content");
+  var rightContent = document.getElementById("right-content");
   rightContent.innerHTML =
     "<p>Preview is not available for executable programme.</p>";
-  let infoPageContainer = document.createElement("div");
-  let infoPageContent = document.createElement("div");
+  var infoPageContainer = document.createElement("div");
+  var infoPageContent = document.createElement("div");
   infoPageContainer.id = "quit-page-container";
   infoPageContent.id = "quit-page-content";
   document.getElementById("blank-page").appendChild(infoPageContainer);
