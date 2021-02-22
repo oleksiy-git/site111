@@ -22,6 +22,12 @@ function aboutInfo() {
   activeLine.classList.add("active-line");
   let rightContent = document.getElementById("right-content");
   rightContent.innerHTML = '<p>Some "About" text to be added here..</p>';
+
+  var rightBottomFileName = document.getElementById("right-bottom-file-name");
+  rightBottomFileName.innerHTML =
+    activeLine.getElementsByTagName("span").item(0).innerHTML +
+    "." +
+    activeLine.getElementsByTagName("span").item(1).innerHTML;
 }
 
 // this function shows "Blog" information on the right panel
@@ -31,6 +37,12 @@ function blogInfo() {
   activeLine.classList.add("active-line");
   let rightContent = document.getElementById("right-content");
   rightContent.innerHTML = '<p>Some "Blog" text to be added here..</p>';
+
+  var rightBottomFileName = document.getElementById("right-bottom-file-name");
+  rightBottomFileName.innerHTML =
+    activeLine.getElementsByTagName("span").item(0).innerHTML +
+    "." +
+    activeLine.getElementsByTagName("span").item(1).innerHTML;
 }
 
 // this function shows "Profile Photo" on the right panel
@@ -40,6 +52,12 @@ function profilePhotoBmp() {
   activeLine.classList.add("active-line");
   let rightContent = document.getElementById("right-content");
   rightContent.innerHTML = '<img src="images/profile-photo.png"></img>';
+
+  var rightBottomFileName = document.getElementById("right-bottom-file-name");
+  rightBottomFileName.innerHTML =
+    activeLine.getElementsByTagName("span").item(0).innerHTML +
+    "." +
+    activeLine.getElementsByTagName("span").item(1).innerHTML;
 }
 
 // this function shows "Work Experience" information on the right panel
@@ -50,6 +68,12 @@ function workExperienceInfo() {
   let rightContent = document.getElementById("right-content");
   rightContent.innerHTML =
     '<p>Some "Work Experience" text to be added here..</p>';
+
+  var rightBottomFileName = document.getElementById("right-bottom-file-name");
+  rightBottomFileName.innerHTML =
+    activeLine.getElementsByTagName("span").item(0).innerHTML +
+    "." +
+    activeLine.getElementsByTagName("span").item(1).innerHTML;
 }
 
 // this function creates Web element to show an "Error" message when user tries to navigate to the "Root" folder
@@ -82,6 +106,12 @@ function contactExe() {
   document.getElementById("quit-page-container").appendChild(infoPageContent);
   infoPageContent.innerHTML =
     '<div class="top-path-label grey-label">Contact.exe</div><div class="popup-content"><p>This programme is under development.</p><p>Meanwhile, you can contact me via</p><p><a href="http://www.linkedin.com/in/oleksiy-onyshchenko" target="_blank">www.linkedin.com/in/oleksiy-onyshchenko</a></p></div><br><div><span class="close-popup-btn" onclick="closeHelpPage()">[ Close this window ]</span><br><br></div>';
+
+  var rightBottomFileName = document.getElementById("right-bottom-file-name");
+  rightBottomFileName.innerHTML =
+    activeLine.getElementsByTagName("span").item(0).innerHTML +
+    "." +
+    activeLine.getElementsByTagName("span").item(1).innerHTML;
 }
 
 // running fucntions
