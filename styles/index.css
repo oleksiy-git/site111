@@ -24,6 +24,13 @@ img {
   box-shadow: 20px 20px rgba(0, 0, 0, 0.8);
   border: 2px solid #00ffff;
 }
+.profile-image {
+  display: flex;
+  margin: auto;
+  /* justify-content: center; */
+  height: 100%;
+}
+
 .main-container {
   width: 80%;
   min-width: 640px;
@@ -85,10 +92,15 @@ img {
   display: flex;
 }
 .right-content {
-  padding: 54px 10px 0 10px;
-  line-height: 1.2rem;
+  padding: 0px 10px 0 10px;
+  line-height: 1.25rem;
   text-align: left;
-  display: flex;
+  /* margin-top: 10px; */
+  /* display: flex; */
+  /* float: left; */
+  /* width:1000px; */
+  overflow-y: auto;
+  height: 100%;
 }
 .top-yellow-label {
   color: #ffff00;
@@ -205,6 +217,9 @@ img {
 .red-label {
   background-color: #800000;
 }
+.yellow-txt {
+  color: #ffff00;
+}
 .red-button {
   color: #800000;
 }
@@ -285,6 +300,9 @@ img {
   body {
     font-size: 0.8rem;
   }
+  .right-content {
+    line-height: 0.9rem;
+  }
 }
 
 /* Temp */
@@ -359,12 +377,17 @@ img {
 }
 .date-column {
   display: flex;
-
   justify-content: center;
   padding: 5px;
 }
 .center {
   justify-content: center;
+}
+.center-txt {
+  text-align: center;
+  /* line-height: 0.5rem; */
+  padding-top: 20px;
+  /* margin-top: 20px; */
 }
 .popup-content {
   padding-left: 30px;
@@ -372,4 +395,24 @@ img {
 }
 .exe-file {
   color: #87c576;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #c0c0c0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #008080;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #008080;
 }

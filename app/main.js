@@ -54,7 +54,8 @@ function profilePhotoBmp() {
   var activeLine = document.getElementById("profile-photo");
   activeLine.classList.add("active-line");
   var rightContent = document.getElementById("right-content");
-  rightContent.innerHTML = '<img src="images/profile-photo.png"></img>';
+  rightContent.innerHTML =
+    '<div class="profile-image"><img src="images/profile-photo.png"></img></div>';
 
   setSelectedFileName(activeLine); // shows file name on the right panel - bottom file name section
 }
@@ -67,7 +68,7 @@ function workExperienceInfo() {
   activeLine.classList.add("active-line");
   var rightContent = document.getElementById("right-content");
   rightContent.innerHTML =
-    '<p>Some "Work Experience" text to be added here..</p>';
+    '<div class="center-txt"><p>*******************</p><p>* Work Experience *</p><p>*******************</p></div><p class="yellow-txt">2015 - present:</p><p>Lead QA Analyst at Luxoft UK LTD (London)</p><p class="yellow-txt">2013 - 2015:</p><p>Senior QA Engineer at Luxoft Ukraine (Kyiv)</p><p class="yellow-txt">2012 - 2013:</p><p>QA Engineer at Samsung R&D Ukraine (Kyiv)</p><p class="yellow-txt">2009 - 2012:</p><p>Software Engineer at Orneon LTD (Vinnytsya)</p><p class="yellow-txt">2008 - 2009:</p><p>Financial adviser at UkrSibBank BNP Paribas (Vinnytsya)</p>';
 
   setSelectedFileName(activeLine); // shows file name on the right panel - bottom file name section
 }
