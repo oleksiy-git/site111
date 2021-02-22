@@ -21,6 +21,8 @@ hr {
 img {
   margin: auto;
   max-width: 55%;
+  box-shadow: 20px 20px rgba(0, 0, 0, 0.8);
+  border: 2px solid #00ffff;
 }
 .main-container {
   width: 80%;
