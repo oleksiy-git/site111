@@ -156,7 +156,10 @@ img {
 .bottom-menu-btn:hover {
   background-color: #c0c0c0;
 }
-
+.bottom-menu-btn:active {
+  background-color: #000000;
+  color: #c0c0c0;
+}
 /* Blank page to disable all elements */
 #blank-page {
   position: absolute;
