@@ -117,7 +117,7 @@ function workExperienceInfo() {
   activeLine.classList.add("active-line");
   var rightContent = document.getElementById("right-content");
   rightContent.innerHTML =
-    '<p class="center-txt">*******************<br>* Work Experience *<br>*******************</p><p><span class="yellow-txt">2015 - present:</span><br><span>Lead QA Analyst at Luxoft UK LTD (London)</span></p><p><span class="yellow-txt">2013 - 2015:</span><br><span>Senior QA Engineer at Luxoft Ukraine (Kyiv)</span></p><p><span class="yellow-txt">2012 - 2013:</span><br><span>QA Engineer at Samsung R&D Ukraine (Kyiv)</span></p><p><span class="yellow-txt">2009 - 2012:</span><br><span>Software Engineer at Orneon LTD (Vinnytsya)</span></p><p><span class="yellow-txt">2008 - 2009:</span><br><span>Financial adviser at UkrSibBank BNP Paribas (Vinnytsya)</span></p>';
+    '<p class="center-txt">*******************<br>* Work Experience *<br>*******************</p><p><span class="yellow-txt">2015 - present:</span><br><span>Lead QA Analyst at Luxoft UK LTD (London)</span></p><p><span class="yellow-txt">2013 - 2015:</span><br><span>Senior QA Engineer at Luxoft Ukraine (Kyiv)</span></p><p><span class="yellow-txt">2012 - 2013:</span><br><span>QA Engineer at Samsung R&D Ukraine (Kyiv)</span></p><p><span class="yellow-txt">2009 - 2012:</span><br><span>Software Engineer at Orneon LTD (Vinnytsya)</span></p><p><span class="yellow-txt">2008 - 2009:</span><br><span>Financial adviser at UkrSibBank BNP Paribas (Vinnytsya)</span></p><p class="center-txt">*******************</p>';
 
   setSelectedFileName(activeLine); // shows file name on the right panel - bottom file name section
 }

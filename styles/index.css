@@ -98,7 +98,7 @@ img {
   display: flex;
 }
 .right-content {
-  padding: 0px 10px 0 10px;
+  padding: 0px 5px 0 5px;
   text-align: left;
   overflow-y: auto;
   height: 100%;
@@ -118,7 +118,7 @@ img {
 }
 .right-bottom-content,
 .left-bottom-content {
-  margin: auto 20px auto 20px;
+  margin: auto 5px auto 5px;
 }
 .file-name {
   flex: 1.5;
@@ -149,9 +149,14 @@ img {
 }
 .footer-console {
   color: #c0c0c0;
+
+  cursor: pointer;
+  display: flex;
+  /* margin: auto; */
+}
+.console-content {
   margin-top: auto;
   margin-bottom: auto;
-  cursor: pointer;
 }
 .footer-menu {
   display: flex;
@@ -300,9 +305,6 @@ img {
 @media screen and (max-width: 900px) {
   body {
     font-size: 0.8rem;
-  }
-  .right-content {
-    line-height: 0.9rem;
   }
 }
 
