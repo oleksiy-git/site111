@@ -22,7 +22,7 @@ img {
   margin: auto;
   max-width: 55%;
   box-shadow: 20px 20px rgba(0, 0, 0, 0.8);
-  border: 2px solid #00ffff;
+  /* border: 2px solid #00ffff; */
 }
 .profile-image {
   display: flex;
@@ -99,12 +99,7 @@ img {
 }
 .right-content {
   padding: 0px 10px 0 10px;
-  line-height: 1;
   text-align: left;
-  /* margin-top: 10px; */
-  /* display: flex; */
-  /* float: left; */
-  /* width:1000px; */
   overflow-y: auto;
   height: 100%;
 }
