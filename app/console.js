@@ -1,6 +1,6 @@
-// function that returns a random MS-DOS command helper on page refresh
+// returns a random MS-DOS command helper on page refresh or onClick
 
-function showRundomDosHelp() {
+function randomMsDosHelpCmd() {
   consoleElement = document.getElementById("consoleDosHelper");
   var consoleHelpList = [
     "	ASSOC          Displays or modifies file extension associations.	",
@@ -93,4 +93,4 @@ function showRundomDosHelp() {
     consoleHelpList[Math.floor(Math.random() * (consoleHelpList.length + 1))];
 }
 
-showRundomDosHelp();
+randomMsDosHelpCmd();
