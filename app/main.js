@@ -1,13 +1,13 @@
 // main js funcitons are here
 
-// this function returns current Year for "Copyright" section to make this app more dinamic :)
+// returns a current Year for "Copyright" section to make this app more dinamic :)
 function getCurrentYear() {
   var today = new Date();
   var year = today.getFullYear();
   document.getElementById("current-year").innerHTML = year;
 }
 
-// this function deletes "Active line" style from non-active lines (files/folders)
+// deletes "Active line" style from non-active lines (files/folders) on the Left panel
 function removeActiveLineStyle() {
   var activeLines = document.getElementsByClassName("active-line");
   while (activeLines[0]) {
@@ -15,7 +15,7 @@ function removeActiveLineStyle() {
   }
 }
 
-// this function takes the name of selected file (Name + extension) and sets into right bottom file name section
+// takes the name of selected file (Name + extension) and sets into the Right Panel > bottom file name section
 function setSelectedFileName(fileName) {
   var rightBottomFileName = document.getElementById("right-bottom-file-name");
   rightBottomFileName.innerHTML =
@@ -24,7 +24,7 @@ function setSelectedFileName(fileName) {
     fileName.getElementsByTagName("span").item(1).innerHTML; // file extension
 }
 
-// this function creates Web element to show an "Error" message when user tries to navigate to the "Root" folder
+// creates Web element to show an "Error" message when user tries to navigate to the "Root" folder
 function root() {
   createBlankPage();
 
@@ -38,7 +38,7 @@ function root() {
     '<div class="top-path-label red-label">Access Denied</div><div class="popup-content"><p>You don&#39;t have an access to the "Root" folder</p></div><div><br><span class="delete-yes-no-button" onclick="closeHelpPage()">[ Close this window ]</span><br><br></div>';
 }
 
-// this function shows "About" information on the right panel
+// shows "About" information on the right panel
 function aboutInfo() {
   removeActiveLineStyle();
 
@@ -50,7 +50,7 @@ function aboutInfo() {
   setSelectedFileName(activeLine); // shows file name on the right panel - bottom file name section
 }
 
-// this function shows "Blog" information on the right panel
+// shows "Blog" information on the right panel
 function blogInfo() {
   removeActiveLineStyle();
 
@@ -62,7 +62,7 @@ function blogInfo() {
   setSelectedFileName(activeLine); // shows file name on the right panel - bottom file name section
 }
 
-// this function creates Web element to show an "Info" message when user tries to run a contact.exe programme
+// creates Web element to show an "Info" message when user tries to run a contact.exe programme
 function contactExe() {
   createBlankPage();
   removeActiveLineStyle();
@@ -84,7 +84,7 @@ function contactExe() {
   setSelectedFileName(activeLine); // shows file name on the right panel - bottom file name section
 }
 
-// this function shows a temporary "Info" message that Resume is not yet available
+// shows a temporary "Info" message that Resume is not yet available
 function resumePdf() {
   removeActiveLineStyle();
 
@@ -96,7 +96,7 @@ function resumePdf() {
   setSelectedFileName(activeLine); // shows file name on the right panel - bottom file name section
 }
 
-// this function shows "Profile Photo" on the right panel
+// shows "Profile Photo" on the right panel
 function profilePhotoBmp() {
   removeActiveLineStyle();
 
@@ -109,7 +109,7 @@ function profilePhotoBmp() {
   setSelectedFileName(activeLine); // shows file name on the right panel - bottom file name section
 }
 
-// this function shows "Work Experience" information on the right panel
+// shows "Work Experience" information on the right panel
 function workExperienceInfo() {
   removeActiveLineStyle();
 
@@ -122,6 +122,5 @@ function workExperienceInfo() {
   setSelectedFileName(activeLine); // shows file name on the right panel - bottom file name section
 }
 
-// running fucntions
 getCurrentYear();
 aboutInfo(); // to show "About" page by default when the page is loaded

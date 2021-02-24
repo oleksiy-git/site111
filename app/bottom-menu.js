@@ -1,6 +1,6 @@
 // bottom menu functions
 
-// this function swaps left and right panels
+// swaps left and right panels
 function swapPanel() {
   var leftPanel = document.getElementById("left-panel");
   var rightPanel = document.getElementById("right-panel");
@@ -20,20 +20,20 @@ function swapPanel() {
   }
 }
 
-// this function creates a blank page to diable all other Web elements from being actioned
+//  creates a blank DIV to diable all other Web elements from being actioned
 function createBlankPage() {
   var blankElement = document.createElement("div");
   document.body.appendChild(blankElement);
   blankElement.id = "blank-page";
 }
 
-// this function removes a blank page including all child elements (popup windows) to enable all other Web elements from being actioned
+// removes a blank DIV including all child elements (popup windows) to enable all other Web elements from being actioned
 function closeHelpPage() {
   var blankElement = document.getElementById("blank-page");
   document.body.removeChild(blankElement);
 }
 
-// this function creates Web element to show a "Help" page for the user
+// creates Web element to show a "Help" page for the user
 function showHelpPage() {
   createBlankPage();
   var helpPageContainer = document.createElement("div");
@@ -46,7 +46,7 @@ function showHelpPage() {
     '<div class="top-path-label green-label">Help Page</div><div class="help-page-copyright">Copyright 1986-2021. Oleksiy Onyshchenko.<br>Inspired by MS-DOS childhood.</div><br><hr><div class="popup-content">Some "Help" text to  be added here..</div><br><br><br><br><br><br><br><div><span class="close-popup-btn" onclick="closeHelpPage()">[ Close this window ]</span></div>';
 }
 
-// this function creares Web element to show an "Exit" confirmation popup message
+// creates Web element to show an "Exit" confirmation popup message
 function quitConfirmation() {
   createBlankPage();
   var quitPageContainer = document.createElement("div");
@@ -59,7 +59,7 @@ function quitConfirmation() {
     '<div class="top-path-label grey-label">Exit</div><div class="popup-content"><p>Are you sure that you want to quit?</p></div><br><div><span class="close-popup-btn">{ Yes }</span><span>     </span><span class="close-popup-btn" onclick="closeHelpPage()">[ No ]</span><br><br></div>';
 }
 
-// this page creates Web element to show "Delete" confirmation popup
+// creates Web element to show "Delete" confirmation popup
 function deletePage() {
   createBlankPage();
   var deletePageContainer = document.createElement("div");
@@ -74,13 +74,13 @@ function deletePage() {
     '<div class="top-path-label red-label">Delete</div><div class="popup-content"><p>One does not simply delete a single file.<br><br>Delete a whole Web Site?</p></div><br><div><span class="delete-yes-no-button" onclick="deleteBodyChild()">{ Yes }</span><span>     </span><span class="delete-yes-no-button" onclick="closeHelpPage()">[ Cancel ]</span><br><br></div>';
 }
 
-// this function shows "Directed By Meme" when user clicks "Delete > Yes"
+// shows "Directed By Meme" when user clicks "Delete > Yes"
 function deleteBodyChild() {
   document.body.innerHTML =
-    '<div class="directed-by-meme-container"><div><image class="directed-by-meme-img" src="images/DirectedByMeme.gif"></image></div><div><a class="rebuild-site-btn" href="https://oleksiy-git.github.io/site">[ Cick here to rebuild the site ]</a></div></div>';
+    '<div class="directed-by-meme-container"><image class="directed-by-meme-img" src="images/DirectedByMeme.gif"></image></div>';
 }
 
-// this funcion created Web element to show "Info" popup that Feature is not yet implemented
+// creates Web element to show "Info" popup that "Feature is not yet implemented"
 function infoMessage() {
   createBlankPage();
   var infoPageContainer = document.createElement("div");
