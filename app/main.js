@@ -45,7 +45,8 @@ function aboutInfo() {
   var activeLine = document.getElementById("about");
   activeLine.classList.add("active-line");
   var rightContent = document.getElementById("right-content");
-  rightContent.innerHTML = '<p>Some "About" text to be added here..</p>';
+  rightContent.innerHTML =
+    '<p><span class="yellow-txt">Hi There,<br>I&apos;m Oleksiy!</span><br><span>/ * Just having some fun with HTML, CSS and JavaScript here.<br>Some features are not available yet and will be added soon. * /</span></p>';
 
   setSelectedFileName(activeLine); // shows file name on the right panel - bottom file name section
 }
