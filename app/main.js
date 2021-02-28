@@ -79,7 +79,7 @@ function contactExe() {
   document.getElementById("blank-page").appendChild(infoPageContainer);
   document.getElementById("quit-page-container").appendChild(infoPageContent);
   infoPageContent.innerHTML =
-    '<div class="top-path-label grey-label">Contact.exe</div><div class="popup-content"><p>This programme is under development.</p><p>Meanwhile, you can contact me via</p><p><a href="http://www.linkedin.com/in/oleksiy-onyshchenko" target="_blank">www.linkedin.com/in/oleksiy-onyshchenko</a></p></div><br><div><span class="close-popup-btn" onclick="closeHelpPage()">[ Close this window ]</span><br><br></div>';
+    '<div class="top-path-label grey-label">Contact.exe</div><div class="popup-content"><p>This programme is under development.</p><p>Meanwhile, you can contact me via:</p><p><a href="http://www.linkedin.com/in/oleksiy-onyshchenko" target="_blank">www.linkedin.com/in/oleksiy-onyshchenko</a></p><p>or</p><p><a href="mailto:oleksiy.git@gmail.com">send an email to: oleksiy.git@gmail.com</a></p></div><br><div><span class="close-popup-btn" onclick="closeHelpPage()">[ Close this window ]</span><br><br></div>';
 
   setSelectedFileName(activeLine); // shows file name on the right panel - bottom file name section
 }
