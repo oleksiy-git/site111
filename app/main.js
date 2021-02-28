@@ -91,7 +91,8 @@ function resumePdf() {
   var activeLine = document.getElementById("resume-pdf");
   activeLine.classList.add("active-line");
   var rightContent = document.getElementById("right-content");
-  rightContent.innerHTML = "<p>Resume is not available yet..</p>";
+  rightContent.innerHTML =
+    "<p>Resume is not available yet.<br>Meanwhile, you can connect with me via<br>www.linkedin.com/in/oleksiy-onyshchenko<br>or send an email to: oleksiy.git@gmail.com</p>";
 
   setSelectedFileName(activeLine); // shows file name on the right panel - bottom file name section
 }
