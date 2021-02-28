@@ -1,4 +1,4 @@
 # site
 
 Oleksiy Onyshchenko - Personal Web Site
-HTML, CSS, JavaScript
+/ _ Just having some fun with HTML, CSS and JavaScript here. _ /
