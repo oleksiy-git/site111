@@ -243,12 +243,22 @@ img {
   cursor: pointer;
   padding: 5px;
 }
+
 .close-popup-btn:hover {
   background-color: #ffff00;
   color: #800000;
   padding: 5px;
 }
-
+.green-button {
+  color: #000000;
+  cursor: pointer;
+  padding: 5px;
+}
+.green-button:hover {
+  background-color: #008080;
+  padding: 5px;
+  color: #ffff00;
+}
 #quit-page-container {
   box-shadow: 20px 20px rgba(0, 0, 0, 0.8);
   min-width: max-content;

@@ -46,7 +46,7 @@ function aboutInfo() {
   activeLine.classList.add("active-line");
   var rightContent = document.getElementById("right-content");
   rightContent.innerHTML =
-    '<p><span class="yellow-txt">Hi There,<br>I&apos;m Oleksiy!</span><br><span>/ * Just having some fun with HTML, CSS and JavaScript here.<br>Some features are not available yet and will be added soon. * /</span></p>';
+    '<p><span class="yellow-txt">Hi There,<br>I&apos;m Oleksiy!</span><br><br><span>/ * Just having some fun with HTML, CSS and JavaScript here. * /</span></p>';
 
   setSelectedFileName(activeLine); // shows file name on the right panel - bottom file name section
 }
@@ -80,7 +80,7 @@ function contactExe() {
   document.getElementById("blank-page").appendChild(infoPageContainer);
   document.getElementById("quit-page-container").appendChild(infoPageContent);
   infoPageContent.innerHTML =
-    '<div class="top-path-label grey-label">Contact.exe</div><div class="popup-content"><p>This programme is under development.</p><p>Meanwhile, you can contact me via:</p><p><a href="http://www.linkedin.com/in/oleksiy-onyshchenko" target="_blank">www.linkedin.com/in/oleksiy-onyshchenko</a></p><p>or</p><p><a href="mailto:oleksiy.git@gmail.com">send an email to: oleksiy.git@gmail.com</a></p></div><br><div><span class="close-popup-btn" onclick="closeHelpPage()">[ Close this window ]</span><br><br></div>';
+    '<div class="top-path-label grey-label">Contact.exe</div><div class="popup-content"><p>This programme is under development.</p><p>Meanwhile, you can contact me via:</p><p><a href="http://www.linkedin.com/in/oleksiy-onyshchenko" target="_blank" class="green-button"title="My Linkedin Profile">www.linkedin.com/in/oleksiy-onyshchenko</a></p><p><a href="mailto:oleksiy.git@gmail.com" class="green-button" title="Email Me">{ oleksiy.git@gmail.com }</a></p></div><br><div><span class="close-popup-btn" onclick="closeHelpPage()">[ Close this window ]</span><br><br></div>';
 
   setSelectedFileName(activeLine); // shows file name on the right panel - bottom file name section
 }
