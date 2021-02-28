@@ -112,7 +112,6 @@ img {
 .left-bottom,
 .right-bottom {
   height: 10%;
-  min-height: 40px;
   width: 100%;
   display: flex;
 }
@@ -302,7 +301,7 @@ img {
 }
 
 /* Media Queries */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1065px) {
   body {
     font-size: 0.8rem;
   }
